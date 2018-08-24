@@ -1,0 +1,67 @@
+{
+  "aliOss": {
+    "urlAliasPrefix": "http://test.gene-report.thorgene.com/",
+    "connection": {
+      "region": "oss-cn-beijing",
+      "accessKeyId": "2pSR2UNkcliLiZJH",
+      "accessKeySecret": "APhROJpzai4PxKnchcbHl3byuVBlBx",
+      "bucket": "thorgene-mweb"
+    }
+  },
+  "amqpAddr": "amqp://mweb-gene:123456@mq-02.thorgene.net:5672?heartbeat=30",
+  "pdfGenTask": {
+    "maxTry": 3,
+    "pdfTaskQueue": "pdfGenTask",
+    "pdfPackTaskQueue": "pdfPackTaskQueue",
+    "interval": 180000,
+    "pdfTaskExchange": "pdfTaskExchange"
+  },
+  "geneApiPrefix": "http://dev.api.thorgene.com/mweb-gene-api",
+  "emailReceiver": "zlc@lczhou.me, cxl_chris@foxmail.com, zhangwenxue@vlifebank.com",
+  "smtpConfig": {
+    "pool": true,
+    "host": "smtp.mxhichina.com",
+    "port": 465,
+    "auth": {
+      "user": "noreply@thorgene.com",
+      "pass": "cMECoIfeEhidvZvV+zvTXA"
+    }
+  },
+  "knex": {
+    "client": "mysql",
+    "connection": {
+      "host": "db-02.thorgene.net",
+      "port": 3306,
+      "user": "thorgene_test",
+      "password": "Thorgenedba007",
+      "database": "thorgene_test",
+      "charset": "utf8mb4"
+    }
+  },
+  "geneKnex": {
+    "client": "mysql",
+    "connection": {
+      "host": "db-02.thorgene.net",
+      "port": 3306,
+      "user": "filtered_db",
+      "password": "Thorgenedba007",
+      "database": "filtered_db",
+      "charset": "utf8mb4"
+    }
+  },
+  "sportKnex": {
+    "client": "mysql",
+    "connection": {
+      "host": "db-02.thorgene.net",
+      "port": 3306,
+      "user": "sport_db",
+      "password": "Thorgenedba007",
+      "database": "sport_db",
+      "charset": "utf8mb4"
+    }
+  },
+  "redis": {
+    "host": "192.168.1.202",
+    "port": 6379
+  }
+}
