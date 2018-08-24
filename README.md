@@ -1,2 +1,3 @@
-# thorgene_pdfmake
-node项目，使用pdfmake模块生成pdf版结构
+# pdfmake-thor
+> node模块，使用第三方node模块`pdfmake`生成pdf文件。
+

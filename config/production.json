@@ -1,0 +1,62 @@
+{
+  "aliOss": {
+    "urlAliasPrefix": "http://gene-report.thorgene.com/",
+    "connection": {
+      "endpoint": "vpc100-oss-cn-beijing.aliyuncs.com",
+      "accessKeyId": "2pSR2UNkcliLiZJH",
+      "accessKeySecret": "APhROJpzai4PxKnchcbHl3byuVBlBx",
+      "bucket": "thorgene-mweb-prod"
+    }
+  },
+  "amqpAddr": "amqp://mweb-gene:u6lvEAkIIxqN@mq-02.aliyun.thorgene.net:5672",
+  "pdfGenTask": {
+    "maxTry": 3,
+    "pdfTaskQueue": "pdfGenTask",
+    "pdfPackTaskQueue": "pdfPackTaskQueue",
+    "interval": 180000,
+    "pdfTaskExchange": "pdfTaskExchange"
+  },
+  "geneApiPrefix": "http://internal.thorgene.com/mweb-gene-api",
+  "emailReceiver": "zlc@lczhou.me, cxl_chris@foxmail.com",
+  "smtpConfig": {
+    "pool": true,
+    "host": "smtp.mxhichina.com",
+    "port": 465,
+    "auth": {
+      "user": "noreply@thorgene.com",
+      "pass": "cMECoIfeEhidvZvV+zvTXA"
+    }
+  },
+  "knex": {
+    "client": "mysql",
+    "connection": {
+      "host": "rm-2zeks3w9gxh08n5qj.mysql.rds.aliyuncs.com",
+      "user": "thorgene_dba",
+      "password": "oai5pHOKx8jI",
+      "database": "wechat_v2",
+      "charset": "utf8mb4"
+    }
+  },
+  "geneKnex": {
+    "client": "mysql",
+    "connection": {
+      "host": "rm-2zeks3w9gxh08n5qj.mysql.rds.aliyuncs.com",
+      "port": 3306,
+      "user": "gene_db",
+      "password": "4xY9fHmQqLaO",
+      "database": "gene_db",
+      "charset": "utf8mb4"
+    }
+  },
+  "sportKnex": {
+    "client": "mysql",
+    "connection": {
+      "host": "rm-2zeks3w9gxh08n5qj.mysql.rds.aliyuncs.com",
+      "port": 3306,
+      "user": "sport_dba",
+      "password": "fHhA03qON7FR",
+      "database": "sport_db",
+      "charset": "utf8mb4"
+    }
+  }
+}
